@@ -41,7 +41,19 @@
     <main class="container">
       <h1 class="page-title">Programação <span>› Filmes em cartaz</span></h1>
 
-      <h2>Programação de hoje</h2>
+      <h2>Programação da semana</h2>
+
+      <nav aria-label="Dias da programação">
+        <ul class="days">
+          <li><a class="day-link active" href="index.html">Segunda</a></li>
+          <li><a class="day-link" href="2terca.html">Terça</a></li>
+          <li><a class="day-link" href="3quarta.html">Quarta</a></li>
+          <li><a class="day-link" href="4quinta.html">Quinta</a></li>
+          <li><a class="day-link" href="5sexta.html">Sexta</a></li>
+          <li><a class="day-link" href="6sabado.html">Sábado</a></li>
+          <li><a class="day-link" href="7domingo.html">Domingo</a></li>
+        </ul>
+      </nav>
 
       <p class="disclaimer">
         O Trex Cinemas se reserva o direito de alterar a programação sem aviso prévio.
@@ -49,9 +61,10 @@
       </p>
 
       <section class="movies" aria-label="Lista de filmes em cartaz">
-        <article class="movie-card">
+        <div class="day-group" id="segunda">
+          <article class="movie-card">
           <div class="poster">
-            <img src="img/homem aranha.jpg" alt="Homem-Aranha: Um Novo Dia" />
+            <a class="poster-link" href="filmes/Aranha.html"><img src="img/homem aranha.jpg" alt="Homem-Aranha: Um Novo Dia" /></a>
           </div>
           <div class="movie-content">
             <h2 class="movie-title">HOMEM-ARANHA: UM NOVO DIA</h2>
@@ -95,11 +108,11 @@
               </div>
             </div>
           </div>
-        </article>
+          </article>
 
-        <article class="movie-card">
+          <article class="movie-card">
           <div class="poster">
-            <img src="img/backrooms.jpg" alt="Backrooms" />
+            <a class="poster-link" href="filmes/Backrooms.html"><img src="img/backrooms.jpg" alt="Backrooms" /></a>
           </div>
           <div class="movie-content">
             <h2 class="movie-title">O FIM DA RUA</h2>
@@ -125,11 +138,11 @@
               </div>
             </div>
           </div>
-        </article>
+          </article>
 
-        <article class="movie-card">
+          <article class="movie-card">
           <div class="poster">
-            <img src="img/minions.jpg" alt="Patrulha Canina: Uma Aventura Dino" />
+            <a class="poster-link" href="filmes/minions.html"><img src="img/minions.jpg" alt="Patrulha Canina: Uma Aventura Dino" /></a>
           </div>
           <div class="movie-content">
             <h2 class="movie-title">Minions e Monstros</h2>
@@ -149,14 +162,14 @@
               </div>
             </div>
           </div>
-        </article>
+          </article>
 
-        <article class="movie-card">
+          <article class="movie-card">
           <div class="poster">
-            <img src="img/casa.jpg" alt="A Morte de Robin Hood" />
+            <a class="poster-link" href="filmes/lasthouse.html"><img src="img/casa.jpg" alt="Última Casa" /></a>
           </div>
           <div class="movie-content">
-            <h2 class="movie-title">A MORTE DE ROBIN HOOD</h2>
+            <h2 class="movie-title">ÚLTIMA CASA</h2>
 
             <div class="cinema-block">
               <h3>Shopping Jaraguá Indaiatuba</h3>
@@ -168,14 +181,14 @@
               </div>
             </div>
           </div>
-        </article>
+          </article>
 
-        <article class="movie-card">
+          <article class="movie-card">
           <div class="poster">
-            <img src="img/odissey.jpg" alt="Colegas e o Herdeiro" />
+            <a class="poster-link" href="filmes/odisseia.html"><img src="img/odissey.jpg" alt="Odisseia" /></a>
           </div>
           <div class="movie-content">
-            <h2 class="movie-title">COLEGAS E O HERDEIRO</h2>
+            <h2 class="movie-title">ODISSEIA</h2>
 
             <div class="cinema-block">
               <h3>Shopping Jaraguá Indaiatuba</h3>
@@ -188,13 +201,13 @@
               </div>
             </div>
           </div>
-        </article>
+          </article>
+        </div>
 
-        <div class="day-group">
-          <h2 class="day-title">Terça-feira</h2>
+        <div class="day-group" id="terca">
           <article class="movie-card">
             <div class="poster">
-              <img src="img/Branquelas.jpg" alt="As Branquelas" />
+              <a class="poster-link" href="filmes/Branquelas.html"><img src="img/Branquelas.jpg" alt="As Branquelas" /></a>
             </div>
             <div class="movie-content">
               <h2 class="movie-title">AS BRANQUELAS</h2>
@@ -213,11 +226,10 @@
           </article>
         </div>
 
-        <div class="day-group">
-          <h2 class="day-title">Quarta-feira</h2>
+        <div class="day-group" id="quarta">
           <article class="movie-card">
             <div class="poster">
-              <img src="img/Exterminator.jpg" alt="O Exterminador" />
+              <a class="poster-link" href="filmes/Exterminator.html"><img src="img/Exterminator.jpg" alt="O Exterminador" /></a>
             </div>
             <div class="movie-content">
               <h2 class="movie-title">O EXTERMINADOR</h2>
@@ -236,11 +248,10 @@
           </article>
         </div>
 
-        <div class="day-group">
-          <h2 class="day-title">Quinta-feira</h2>
+        <div class="day-group" id="quinta">
           <article class="movie-card">
             <div class="poster">
-              <img src="img/Rambo.jpg" alt="Rambo" />
+              <a class="poster-link" href="filmes/rambo.html"><img src="img/Rambo.jpg" alt="Rambo" /></a>
             </div>
             <div class="movie-content">
               <h2 class="movie-title">RAMBO: ULTIMA RETALIAÇÃO</h2>
@@ -259,14 +270,13 @@
           </article>
         </div>
 
-        <div class="day-group">
-          <h2 class="day-title">Sexta-feira</h2>
+        <div class="day-group" id="sexta">
           <article class="movie-card">
             <div class="poster">
-              <img src="img/jacob.jpg" alt="Jacob" />
+              <a class="poster-link" href="filmes/Crepusculo.html"><img src="img/jacob.jpg" alt="Crepúsculo" /></a>
             </div>
             <div class="movie-content">
-              <h2 class="movie-title">JACOB</h2>
+              <h2 class="movie-title">CREPÚSCULO</h2>
               <div class="cinema-block">
                 <h3>Polo Shopping Indaiatuba</h3>
                 <div class="session-row">
@@ -282,11 +292,10 @@
           </article>
         </div>
 
-        <div class="day-group">
-          <h2 class="day-title">Sábado</h2>
+        <div class="day-group" id="sabado">
           <article class="movie-card">
             <div class="poster">
-              <img src="img/michael.jpg" alt="Michael" />
+              <a class="poster-link" href="filmes/Michael.html"><img src="img/michael.jpg" alt="Michael" /></a>
             </div>
             <div class="movie-content">
               <h2 class="movie-title">MICHAEL</h2>
@@ -306,11 +315,10 @@
           </article>
         </div>
 
-        <div class="day-group">
-          <h2 class="day-title">Domingo</h2>
+        <div class="day-group" id="domingo">
           <article class="movie-card">
             <div class="poster">
-              <img src="img/toy story.jpg" alt="Toy Story" />
+              <a class="poster-link" href="filmes/toystory.html"><img src="img/toy story.jpg" alt="Toy Story" /></a>
             </div>
             <div class="movie-content">
               <h2 class="movie-title">TOY STORY: O MUNDO DOS BRINQUEDOS</h2>
@@ -330,6 +338,35 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const dayGroups = [...document.querySelectorAll(".day-group")];
+      const movieCards = dayGroups.flatMap((group) =>
+        [...group.querySelectorAll(".movie-card")]
+      );
+      const maxMoviesPerDay = 5;
+
+      for (let index = movieCards.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [movieCards[index], movieCards[randomIndex]] = [
+          movieCards[randomIndex],
+          movieCards[index],
+        ];
+      }
+
+      dayGroups.forEach((group) => {
+        group.querySelectorAll(".movie-card").forEach((card) => card.remove());
+      });
+
+      movieCards.forEach((card) => {
+        const availableGroups = dayGroups.filter(
+          (group) => group.querySelectorAll(".movie-card").length < maxMoviesPerDay
+        );
+        const randomGroup =
+          availableGroups[Math.floor(Math.random() * availableGroups.length)];
+        randomGroup.append(card);
+      });
+    </script>
   </body>
 </html>
 
